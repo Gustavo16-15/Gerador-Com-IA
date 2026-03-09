@@ -12,11 +12,12 @@ Integração com IA: Comunicação direta com modelos avançados via fetch API.
 *CSS3
 *JAVASCRIPT
 *API : Conexão com o modelo openai/gpt-oss-120b.
+Site onde eu criei a chave para IA  : https://groq.com/
 
  # COMO FUNCIONA  O PROJETO
  O usuário descreve o que deseja criar (ex: "faça uma bola verde quicando"). Ao clicar no botão Gerar, a aplicação envia essa solicitação para a IA, que retorna o código completo. O sistema então injeta esse código automaticamente no <iframe>, permitindo que o usuário veja a demonstração funcional na hora.
 
- NOTA:  Cada linha lógica do projeto está detalhadamente comentada no código-fonte para fins educativos.
+NOTA:  Cada linha lógica do projeto está detalhadamente comentada no código-fonte para fins educativos.
  
 # Comunicação com a API
 A aplicação ultiliza a ferramenta fetch do JavaScript para se comunicar com o servidor. Enviamos um objeto JSON contendo:
@@ -28,6 +29,7 @@ A aplicação ultiliza a ferramenta fetch do JavaScript para se comunicar com o 
 # Autor 
 Gustavo Cordeiro Hernandez - Desenvolvedor Do Progeto e da Documentação
 Link do Projeto  https://gustavo16-15.github.io/Gerador-Com-IA/
+
 
 
 
