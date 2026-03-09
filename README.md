@@ -9,9 +9,13 @@ Integração com IA: Comunicação direta com modelos avançados via fetch API.
 
  # FERRAMENTAS
 *HTML5
+
 *CSS3
+
 *JAVASCRIPT
+
 *API : Conexão com o modelo openai/gpt-oss-120b.
+
 Site onde eu criei a chave para IA  : https://groq.com/
 
  # COMO FUNCIONA  O PROJETO
@@ -29,6 +33,7 @@ A aplicação ultiliza a ferramenta fetch do JavaScript para se comunicar com o 
 # Autor 
 Gustavo Cordeiro Hernandez - Desenvolvedor Do Progeto e da Documentação
 Link do Projeto  https://gustavo16-15.github.io/Gerador-Com-IA/
+
 
 
 
