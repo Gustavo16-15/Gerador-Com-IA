@@ -27,6 +27,7 @@ A aplicação ultiliza a ferramenta fetch do JavaScript para se comunicar com o 
 
 # Autor 
 Gustavo Cordeiro Hernandez - Desenvolvedor Do Progeto e da Documentação
-Link do Projeto file:///C:/Users/Gustavo%20C.%20Hernandez/OneDrive/Dpi/Projeto-Front-end-Com-IA-2026/index.html
+Link do Projeto  https://gustavo16-15.github.io/Gerador-Com-IA/
+
 
 
