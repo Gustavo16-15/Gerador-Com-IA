@@ -36,7 +36,7 @@ let botao = document.querySelector(".botaoGerar");
 
 let chave = "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"
 // chave de acesso para a API da Groq, que é necessária para autenticar as solicitações feitas à API.
-
+// observação : So pode ser usada mesma chave apenas uma vez. Para criar uma chave nova deixarei o link do site que eu usei para criar essa chave no README.md.
 let endececo = "https://api.groq.com/openai/v1/chat/completions"
 // URL do endpoint da API da Groq para criar uma nova conclusão de chat. Essa URL é usada para enviar solicitações POST à API, onde o corpo da solicitação conterá os dados necessários para gerar a resposta da IA com base na entrada do usuário.
 
@@ -135,4 +135,5 @@ function limparFence(codigo) {
     return codigoLimpo;
     // A função retorna o código limpo, sem as marcações de código, para que possa ser exibido de forma adequada no elemento HTML.
 }
+
 
