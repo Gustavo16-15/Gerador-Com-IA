@@ -1,0 +1,129 @@
+/* Configurações Globais */
+*{
+ margin: 0; 
+ padding: 0; /*margin: 0; padding: 0: Remove os espaços externos e internos padrão. */
+ box-sizing: border-box;/* box-sizing: border-box: Garante que o padding e a border não aumentem o tamanho final dos elementos (evita que o layout "quebre"). */
+ font-family: "Inter", sans-serif; /* font-family: "Inter", sans-serif: Define a fonte padrão para o documento.Uma fonte sem serifa moderna, importada via Google Fonts, otimizada para leitura em telas digitais. */
+}
+
+/* Layout do corpo da página */
+body{
+    background-color: hsl(144, 100%, 1%); /* Cor de fundo da página */
+    padding: 40px;/* Espaçamento interno da página */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Definido como um container flexível vertical (column). 
+    Isso centraliza todos os elementos horizontalmente através do align-items: center. */
+}
+
+/* Estilos para o título principal */
+.Gerador{
+    color: hsl(144, 100%, 100%);/* Cor do texto do título principal */
+    font-size: 40px;/* Tamanho da fonte do título principal */
+    font-weight:bold; /* Deixa o texto em negrito */
+    
+}
+/* Estilos para o contêiner do gerador */
+.gerador{
+    text-align: center; /* Alinha o texto do contêiner do gerador ao centro */
+}
+
+/* Estilos dos Spans */
+.vermelho{
+    color: hsl(0, 100%, 28%);
+}
+
+.azul{
+    color: hsl(220, 100%, 26%);
+}
+.amarelo{
+    color: hsl(60, 100%, 27%);
+}
+.trocaCor{
+    color: hsl(272, 83%, 24%);
+}
+
+/* Estilos para o parágrafo de texto */
+.texto{
+    color: hsl(0, 0%, 59%);
+    font-size: 20px;
+    margin: 10px; /* Espaçamento ao redor do parágrafo */
+}
+    
+
+/* Estilos do textarea */
+.caixaTexto{
+resize: none;/* resize = redimencionar . Impede que o usuário quebre o layout redimensionando o campo manualmente.*/
+width: 100%; /* Largura total  */
+max-width: 640px; /*Largura máxima */
+margin-top: 20px; /*Espaçamento superior */
+padding: 16px; /* Espaçamento interno */
+border: 3px solid  hsl(272, 96%, 29%); /* borda solida com a grosura de 3px*/
+border-radius:10px ;/* borda aredondada */
+background-color: hsl(228, 9%, 11%);
+color: hsl(0, 0%, 59%);
+outline: none; /* outline = contorno , none = sem contorno */
+}
+
+/*Layout do Botão*/
+.botaoGerar{
+width: 100%;
+max-width: 640px;
+background-color: hsl(272, 83%, 24%);
+color:hsl(0, 0%, 0%);
+font-size: 16px;
+font-weight: bold; /*fonte em negrito*/
+border: none;
+padding: 14px;
+border-radius: 10px;
+cursor: pointer; /* cursor = cursor do mouse */
+margin-top: 20px;
+}
+
+/* Layout do container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex; /* display: flex: Define o contêiner como um layout flexível, permitindo que seus filhos sejam organizados de forma flexível. */
+    gap: 20px; /* gap: 20px: Define um espaço de 20 pixels entre os elementos filhos do contêiner. */
+    justify-content: center; /* justify-content: center: Centraliza os elementos filhos horizontalmente dentro do contêiner. */ 
+}
+
+/* Layout do título secundário */
+h2{
+    color: hsl(272, 96%, 29%);
+    font-size: 24px;
+    margin-bottom: 10px; /* Espaçamento inferior  */
+ }
+
+/* Layout do Paragrafo bloco codigo*/
+.bloco-codigo{
+    background-color: hsl(210, 16%, 10%);
+    color : hsl(272, 96%, 29%);
+    border: solid 3px  hsl(272, 96%, 29%);;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 2; /* line-height = controle de espaçamento entre linhas */
+    overflow: auto; /* overflow = controle de rolagem , auto = exibe barras de rolagem quando necessário */
+    width: 100%;
+    height: 100%; /* Altura Total  */
+    max-width: 700px;
+    max-height: 640px; /*Altura maxima  */
+    white-space: pre-wrap; /* white-space = controle de quebra de linha */
+    
+}
+/* Layout do resultado do código */
+.resultado-codigo{
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    border: solid 3px  hsl(272, 96%, 29%);;
+    border-radius: 12px;
+    background-color: hsl(210, 16%, 10%);
+}
+
+
+
+ 
+ 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--head  é uma tag que contém as configurações do documento -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta é uma tag de instrução de bastidores onde ela não aparece no conteúdo da página, mas tem uma função importante para o funcionamento do site, como por exemplo a tag 
+    <meta charset="UTF-8"> que é responsável por definir a codificação de caracteres do documento ,e a tag <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    que é responsável por definir a largura da tela para dispositivos móveis -->
+    <!-- "UTF-8" :são os caracteres da língua portuguesa do Brasil -->
+    <!--content="width=device-width: Define que a largura da sua página deve ser igual à largura da tela do aparelho (seja um iPhone, um tablet ou um monitor).-->
+    <!-- initial-scale=1.0" : initial-scale=1.0: Define o nível de zoom inicial quando a página é carregada pela primeira vez. O valor 1.0 significa "sem zoom" (proporção 1:1).  -->
+
+    <title>Gerador com IA</title>
+    <!--<title> é uma tag que define o título da página que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- link é uma tag que vincula um documento externo ao documento atual , nesse caso o arquivo style.css que o Css -->
+    <!-- rel = realantionship (realcionamento). "stylesheet" :Diz ao navegador que esse link é uma folha de estilo (CSS). -->
+    <!--href = referencia   -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Nesse link Importa a fonte Inter do Google Fonts para uma tipografia moderna. "stylesheet" :Diz ao navegador que esse link é uma folha de estilo (CSS).-->
+
+</head>
+
+<body>
+    <h1 class="Gerador">
+        <!-- h1 é uma tag para gerar o titulo principal da sua página , ela tem uma classe chamada "Gerador"-->
+
+        <span class="vermelho">HTML</span> ,<span class="azul">CSS</span>, <span class="amarelo">JAVASCRIPT</span> <br>
+        <!--span é uma tag que serve para isolar um pedaço de conteúdo para que você possa aplicar um estilo específico via CSS ou um comportamento via JavaScript.
+        Cada span de a sua classe para aplicar no CSS "vermelho" ,"azul" e "amarelo"-->
+
+        <div class="gerador">
+            <!-- <div> é uma tag ,caixa, que serve para agrupar elementos HTML . Essa div tem uma classe chamada "gerador"-->
+
+            <span> Gerador <span class="trocaCor">por IA</span></span>
+            <!--Esse span tem uma classe chamada "trocaCor" que será utilizada para aplicar um estilo específico via CSS-->
+
+        </div>
+    </h1>
+
+    <p class="texto">Descreva o que deseja gerar e clique no botão "Gerar" para obter resultados incríveis!</p>
+    <!-- <p> é uma tag para gerar um parágrafo de texto. Essa tag tem uma classe chamada "texto"-->
+
+    <textarea rows="3" class="caixaTexto" placeholder="Digite o que deseja gerar"></textarea>
+    <!--<textarea> é uma tag para criar uma área de texto editável. Onde o usuário descreve o que a IA deve criar. Possui a classe caixaTexto.-->
+    <!-- rows = linha -->
+    <!-- placeholder = texto exibido dentro da área de texto -->
+
+    <input type="button" value="Gerar" onclick="gerar()" class="botaoGerar">
+    <!-- <input> é uma tag para criar um elemento de entrada interativo. Nesse caso, é um botão do tipo "button" com o valor "Gerar". 
+    Quando o botão é clicado, a função JavaScript "gerar()" é chamada. A classe "botaoGerar" é usada para aplicar estilos específicos via CSS.-->
+
+    <div class="container">
+        <!-- Caixa com a classe container  -->
+
+        <diV class="reposta">
+            <!-- Caixa com a classe resposta  -->
+
+            <h2>Codigo</h2>
+            <!-- <h2>  tag de titulo da pagina , porém tem menos importamcia que o <h1> -->
+
+            <p class="bloco-codigo"></p>
+            <!-- Esse <p> é muito importante ,ele vai receber o código gerado pela IA  pela classe "bloco-codigo" no JavaScrip-->
+
+        </diV>
+
+        <div class="demostracao">
+            <!-- Caixa com a classe demostracao  -->
+
+            <h2>Resultado</h2>
+
+            <iframe class="resultado-codigo"></iframe>
+            <!-- iframe  uma tag que permite que você incorpore e exiba uma outra página HTML (ou um conteúdo externo) dentro da sua página atual. -->
+            <!-- Ela é usada aqui para renderizar e mostrar o resultado visual do código (como um site de verdade dentro de um quadro). -->
+
+        </div>
+
+    </div>
+    
+
+</body>
+
+<script src="script.js"></script>
+<!-- A tag <script> Localizado no final do corpo para garantir que o HTML seja carregado antes do comportamento lógico. 
+Ele chama o arquivo script.js, que conterá a lógica de integração com a IA e a manipulação dos elementos da tela. -->
+
+</html>
